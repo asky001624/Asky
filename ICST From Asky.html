@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Campus Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    .header-content img {
+      height: 130px;
+    }
+
+    .apply-button {
+      position: absolute;
+      right: 0;
+      bottom: -10px;
+      background-color: #ff6600;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-right: 10px;
+      transition: background 0.3s;
+    }
+
+    .apply-button:hover {
+      background-color: #e65c00;
+    }
+
+    nav {
+      background-color: #002d5e;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section > h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .home-section {
+      text-align: center;
+    }
+
+    .home-section img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .highlight-paragraph {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .founder-section {
+      text-align: center;
+    }
+
+    .founder-section img {
+      width: 500px;
+      height: 400px;
+      border-radius: 12px;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .founder-section p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .facilities, .courses-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .facility-card, .course-card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .course-card img, .facility-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <img src="1234.png" alt="Campus Logo">
+      <div>
+        <h1>INTERNATIONAL CAMPUS OF SCIENCE AND TECHNOLOGY</h1>
+      </div>
+      <a href="#contact" class="apply-button">Apply Now</a>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#courseSection">Courses</a>
+    <a href="#faculties">Faculties</a>
+    <a href="#facilities">Facilities</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home" class="home-section">
+    <img src="icst3.png" alt="Campus View">
+    <h2>Welcome to ICST</h2>
+    <p class="highlight-paragraph">
+      Empowering students with knowledge, skills, and confidence to lead the future of technology.
+      Step into a world of innovation, excellence, and endless learning possibilities.
+    </p>
+  </section>
+
+  <section id="founder" class="founder-section">
+    <h2>Our Founder</h2>
+    <img src="hz.png" alt="Founder Photo">
+    <p>
+      Mr. M.L.A.M. Hizbullah is the visionary founder of ICST.  
+      ICST Campus began as a dream. It was founded with the vision of helping youth grow through technology and education.  
+      We are committed to providing quality education that is accessible to all.  
+      This journey is made meaningful because of you.  
+      I truly believe that you are the leaders of tomorrow. 
+    </p>
+  </section>
+
+  <section id="about">
+    <h2>About Our Campus</h2>
+    <p class="highlight-paragraph" style="text-align:center;">
+      Leading educational institution dedicated to providing high-quality computer science and IT education.
+      Built to meet the modern demands of the tech world, ICST offers students an environment that fosters academic excellence,
+      innovation, and industry-ready skills.
+    </p>
+  </section>
+
+  <section id="courseSection">
+    <h2>Our Courses</h2>
+    <div class="courses-list">
+      <div class="course-card">
+        <img src="10001.jpg" alt="Computer Science">
+        <h3>HDIT</h3>
+        <p>Learn software development, AI, data science, and more.</p>
+      </div>
+      <div class="course-card">
+        <img src="acca1.png" alt="Business Management">
+        <h3>ACCA</h3>
+        <p>Focus on marketing, HR, finance, and leadership.</p>
+      </div>
+      <div class="course-card">
+        <img src="425.png" alt="Engineering">
+        <h3>QS</h3>
+        <p>Specializations in civil, mechanical, and electrical.</p>
+      </div>
+      <div class="course-card">
+        <img src="1000.jpg" alt="Health Sciences">
+        <h3>BAIT</h3>
+        <p>Explore nursing, medical technology, and public health.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faculties">
+    <h2>Our Faculties</h2>
+    <div class="facilities">
+      <div class="facility-card">
+        <img src="Engineering.jpg" alt="Dr. A. Rahman">
+        <h3>Engineering & Technology</h3>
+      </div>
+      <div class="facility-card">
+        <img src="IT.jpg" alt="Ms. N. Sabeena">
+        <h3>Computing & Informatic</h3>
+      </div>
+      <div class="facility-card">
+        <img src="managemant.jpg" alt="Mr. S. Faizal">
+        <h3>Management Studies</h3>
+      </div>
+      <div class="facility-card">
+        <img src="design.png" alt="Dr. R. Thilaga">
+        <h3>Architecture And Design</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="facilities">
+    <h2>Our Facilities</h2>
+    <div class="facilities">
+      <div class="facility-card">
+        <img src="LIB.jpg" alt="Library">
+        <h3>Library</h3>
+        <p>Access thousands of books, journals, and digital resources.</p>
+      </div>
+      <div class="facility-card">
+        <img src="COMPUTER.jpg" alt="Computer Lab">
+        <h3>Computer Lab</h3>
+        <p>High-end PCs with the latest software and internet access.</p>
+      </div>
+      <div class="facility-card">
+        <img src="LECTURE.jpg" alt="Lecture Hall">
+        <h3>Lecture Hall</h3>
+        <p>Spacious and modern halls for lectures and seminars.</p>
+      </div>
+      <div class="facility-card">
+        <img src="HOSTEL1.jpg" alt="Hostel">
+        <h3>Hostel</h3>
+        <p>Comfortable and secure accommodation for students.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 style="text-align:center;">Contact Us</h2>
+    <p style="text-align:center;">Email: admissions@icst.edu.lk</p>
+    <p style="text-align:center;">Phone: +94 743 444 444</p>
+    <p style="text-align:center;">Address: punanai, ICST University Park</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ICST Campus. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
